@@ -1,6 +1,5 @@
 a[aria-current="page"] {
     font-weight: bold;
-    color: #198754; /* Bootstrap success green */
 }
 
 * {
