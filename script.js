@@ -61,3 +61,21 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(impactBox);
   }
 });
+
+
+// Create Animated Underline
+
+const items = document.querySelectorAll('.underline');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    entry.target.classList.toggle('active', entry.isIntersecting);
+  });
+}, { threshold: 0.1 });
+
+items.forEach(el => observer.observe(el));
+
+
+// Get current year for copyright text
+
+document.getElementById('currentYear').textContent = new Date().getFullYear();
