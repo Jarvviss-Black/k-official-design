@@ -247,6 +247,41 @@ main .about-us-section .about-us-photo {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+
+/* ACTION SECTION */
+
+main .activity-section .activity-card {
+    padding: 15px 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+main .activity-section .activity-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+main .activity-section .activity-card .icon-wrapper {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(25, 135, 84, 0.08);
+    color: #198754;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+main .activity-section .activity-card:hover .icon-wrapper {
+    background-color: #198754;
+    color: #fff !important;
+    
+}
+
 @media (max-width: 991.98px) {
     /* main > hero-section */
 
