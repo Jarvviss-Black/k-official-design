@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 2.0;
-    min-width: 320px;
+    min-width: 370px;
 }
 
 p {
@@ -113,7 +113,9 @@ main .underline.active {
 }
 
 main .card {
+    position: relative;
     max-width: 400px;
+    height: 100%;
     display: block;
     margin: 0 auto;
     transition: all 0.3s ease;
@@ -379,6 +381,75 @@ footer .social-icons a:hover i {
     color: #198754;
 }
 
+
+/* ARTICLES.HTML */
+
+/* TAB NAVIGATION STYLE */
+
+main .nav-tabs {
+    flex-wrap: wrap !important;
+    overflow: hidden !important;
+    scrollbar-width: none; 
+}
+    
+main .nav-tabs::-webkit-scrollbar {
+    display: none; 
+}
+
+/* TAB BUTTON STYLE */
+
+main .nav-tabs .nav-item .nav-link {
+    color: black !important;
+    font-weight: 500;
+    border: none;
+    font-size: 16px;
+}
+
+main .nav-tabs .nav-item .nav-link.active {
+    font-weight: 700;
+    color: black !important;
+    border-bottom: 3px solid black;
+    background-color: transparent !important;
+}
+
+/* ARTICLE CARD */
+
+main .article-card {
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+main .article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+main .article-card .image-container {
+    height: 300px;
+    overflow: hidden;
+}
+
+main .article-card .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .article-card .line-clamp {
+    display: -webkit-box;        
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;       
+    overflow: hidden;            
+    text-overflow: ellipsis;     
+    word-break: break-word;     
+}
+
 @media (max-width: 991.98px) {
     /* main > hero-section */
 
@@ -418,6 +489,12 @@ footer .social-icons a:hover i {
     main .hero-section .image-container .impact-box .metric-divider {
         height: 60px;
     }  
+
+    /* ARTICLES.HTML */
+
+    main .article-card .line-clamp {
+        -webkit-line-clamp: 3;       
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -446,4 +523,9 @@ footer .social-icons a:hover i {
     main .hero-section .image-container .impact-box .metric-divider {
         display: none;
     }  
+
+    /* ARTICLES.HRML */
+    main .nav-tabs .nav-item .nav-link {
+        font-size: 14px;
+    }
 }

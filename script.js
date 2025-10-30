@@ -76,6 +76,25 @@ const observer = new IntersectionObserver((entries) => {
 items.forEach(el => observer.observe(el));
 
 
+// Articles tab filtering
+const tabButtons = document.querySelectorAll('#articleCategoryTab button');
+const allCards = document.querySelectorAll('.article-card');
+
+tabButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Remove active class from all buttons
+    tabButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const category = btn.getAttribute('data-bs-target');
+
+    allCards.forEach(articleBox => {
+      articleBox.style.display = (category === 'all' || articleBox.dataset.category === category) ? 'block' : 'none';
+    });
+  });
+});
+
+
 // Get current year for copyright text
 
 document.getElementById('currentYear').textContent = new Date().getFullYear();
