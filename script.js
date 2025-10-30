@@ -98,3 +98,41 @@ tabButtons.forEach(btn => {
 // Get current year for copyright text
 
 document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+
+// Gallery 
+
+const galleryPhotos = [
+  {
+    src: "assets/photos/about-us-section-photo-001.jpg",
+    title: "Kayaw Youth",
+  },
+  {
+    src: "assets/photos/hero-section-photo-001.jpg",
+    title: "Kayaw Youth Dancing",
+    },
+];
+
+const galleryGrid = document.getElementById("galleryGrid");
+
+galleryPhotos.forEach((item) => {
+  const col = document.createElement("div");
+  col.className = "col-12 col-lg-4 col-md-6";
+  col.innerHTML = `
+    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+      <img src="${item.src}" data-bs-image-url="${item.src}" alt="${item.title}" class="img-fluid" />
+      <div class="gallery-caption">
+        <h5>${item.title}</h5>
+      </div>
+    </div>
+  `;
+  galleryGrid.appendChild(col);
+});
+
+// Modal Logic
+const galleryModal = document.getElementById("galleryModal");
+galleryModal.addEventListener("show.bs.modal", (event) => {
+  const clickedItem = event.relatedTarget.querySelector("img");
+  const imageUrl = clickedItem.getAttribute("data-bs-image-url");
+  document.getElementById("modalImage").src = imageUrl;
+});

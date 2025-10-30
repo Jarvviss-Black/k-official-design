@@ -444,11 +444,123 @@ main .article-card .image-container img {
 main .article-card .line-clamp {
     display: -webkit-box;        
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;       
+    -webkit-line-clamp: 3;       
     overflow: hidden;            
     text-overflow: ellipsis;     
     word-break: break-word;     
 }
+
+
+/* GALLERY.HTML */
+
+main .gallery-container {
+    padding: 20px;
+}
+
+main .gallery-container .gallery-item {
+    position: relative;
+    cursor: pointer;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+main .gallery-container .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+main .gallery-container .gallery-item:hover img {
+    transform: scale(1.05);
+    }
+
+main .gallery-container .gallery-item .gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+main .gallery-container .gallery-item:hover .gallery-caption {
+    opacity: 1;
+}
+
+main .gallery-container .modal .modal-content {
+    background: transparent;
+    border: none;
+}
+
+main .gallery-container .modal .modal-content .modal-header {
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+main .gallery-container .modal .modal-content .modal-header .btn-close {
+    filter: invert(1);
+    font-size: 32px;
+}
+
+main .gallery-container .modal .modal-content .modal-header .btn-close {
+    width: 48px;           
+    height: 48px;
+    border: none;
+    background: none;
+    font-weight: bold;        
+    font-size: 28px;          
+    color: #000000;          
+    opacity: 0.8;
+    cursor: pointer;
+    position: relative;
+}
+
+main .gallery-container .modal .modal-content .modal-header .btn-close::before,
+main .gallery-container .modal .modal-content .modal-header .btn-close::after {
+    content: '';
+    position: absolute;
+    width: 3px;              
+    height: 24px;           
+    background-color: currentColor; 
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+
+main .gallery-container .modal .modal-content .modal-header .btn-close::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+main .gallery-container .modal .modal-content .modal-header .btn-close::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+main .gallery-container .modal .modal-content .modal-header .btn-close:hover {
+    opacity: 1;              
+}
+
+main .gallery-container .modal .modal-content .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+main .gallery-container .modal .modal-content .modal-body img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
 
 @media (max-width: 991.98px) {
     /* main > hero-section */
@@ -493,7 +605,7 @@ main .article-card .line-clamp {
     /* ARTICLES.HTML */
 
     main .article-card .line-clamp {
-        -webkit-line-clamp: 3;       
+        -webkit-line-clamp: 2;       
     }
 }
 
