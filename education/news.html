@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP CSS & JS 5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP ICONS 1.11.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Padauk Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/jpeg" href="../assets/images/KwYO-logo.jpg">
+
+    <link rel="stylesheet" href="../style.css">
+
+    <title>Kayaw Youth Organization</title>
+</head>
+<body>
+    <!-- DESKTOP NAV -->
+    <div class="sticky-top d-none d-md-block" id="desktop-nav">
+        <ul class="nav bg-secondary justify-content-center">
+            <li class="nav-item">
+                <a href="../index.html" class="nav-link text-white" aria-current="page">
+                    ပင်မစာမျက်နှာ
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="./news.html" class="nav-link text-white">
+                    ပညာရေး သတင်းများ
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../articles.html" class="nav-link text-white">
+                    ဆောင်းပါးများ
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../gallery.html" class="nav-link text-white">
+                    ပုံပြခန်း
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#footer" class="nav-link text-white">
+                    ဆက်သွယ်ရန်
+                </a>
+            </li>
+        </ul>
+
+        <nav class="navbar bg-body-tertiary border-bottom">
+            <div class="container">
+                <div>
+                    <a href="#top" class="navbar-brand">
+                        <img src="../assets/images/KwYO-logo.jpg" alt="KwYO-logo" class="logo">
+                        <span class="fw-bold">
+                            Kayaw Youth Organization
+                        </span>
+                    </a>
+                </div>
+                    
+                <div>
+                    <!-- WARNING: NEED TO ADD LINK -->
+                    <a href="#" class="btn btn-outline-secondary text-black text-white-on-hover">
+                        <i class="bi bi-translate"></i>&nbsp;&nbsp;Translate to English
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+        
+
+    <!-- MOBILE NAV -->
+    <div class="sticky-top mobile-nav d-block d-md-none" id="mobile-nav">
+        <nav class="navbar bg-body-tertiary border-bottom">
+            <div class="container">
+                <div>
+                    <a href="#top" class="navbar-brand">
+                        <img src="../assets/images/KwYO-logo.jpg" alt="KwYO-logo" class="logo">
+                        <span class="fw-bold">
+                            Kayaw Youth Organization
+                        </span>
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header border-bottom">
+                        <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
+                            လမ်းညွှန်ဘား
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">
+                                    <i class="bi bi-house"></i>&nbsp;&nbsp;ပင်မ စာမျက်နှာ
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./news.html">
+                                    <i class="bi bi-newspaper"></i>&nbsp;&nbsp;ပညာရေး သတင်းများ 
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../articles.html">
+                                    <i class="bi bi-pencil"></i>&nbsp;&nbsp;ဆောင်းပါးများ
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../gallery.html">
+                                    <i class="bi bi-images"></i>&nbsp;&nbsp;ပုံပြခန်း
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#footer">
+                                    <i class="bi bi-person-vcard"></i>&nbsp;&nbsp;ဆက်သွယ်ရန်
+                                </a>
+                            </li> 
+                        </ul>
+
+                        <a class="btn btn-secondary position-absolute bottom-0 start-0 end-0 mx-3 mb-3" href="#">
+                            <i class="bi bi-translate"></i>&nbsp;&nbsp;Translate to English
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+    </div>
+
+    <main class="container">
+        <!-- INTRO SECTION -->
+        <section class="container my-5">
+            <p class="text-center m-4 small">
+                <a href="../index.html" class="text-decoration-none text-secondary">
+                    ပင်မစာမျက်နှာ
+                </a>
+                <i class="bi bi-caret-right-fill text-secondary"></i>
+                <a href="./news.html" class="text-decoration-none text-secondary">
+                    ပညာရေး သတင်းများ
+                </a>
+            </p>
+
+            <h1 class="fw-bold text-center my-4">
+                ပညာရေး သတင်းများ
+            </h1>
+
+            <p class="text-secondary text-center d-block mx-auto" style="max-width: 600px;">
+                အတိတ်သမိုင်းဖြစ်ရပ်များ၊ ယဉ်ကျေးမှုအမွေအနှစ်များနှင့် မျိုးနွယ်အဖွဲ့အစည်းများ၏နေထိုင်မှုဘဝများအကြောင်း ပါဝင်သည့် သုတေသနဆန်သော ဆောင်းပါးများကို ရှာဖွေဖတ်ရှုပါ။
+            </p>
+        </section>
+
+        <!-- CATEGORY TABS -->
+        <div class="container-fluid">
+            <ul class="nav nav-tabs justify-content-center" id="articleCategoryTab" role="tablist">
+                <li class="nav-item">
+                    <button class="nav-link active" data-bs-target="all" type="button" role="tab">အားလုံး</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-target="art" type="button" role="tab">အနုပညာ</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-target="university" type="button" role="tab">တက္ကသိုလ်</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-target="development" type="button" role="tab">ဖွံ့ဖြိုးတိုးတက်မှု</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-target="research" type="button" role="tab">သုတေသန</button>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- ARTICLES -->
+        <section class="my-5">
+            <div class="row">
+
+                <!-- ART -->
+                <div class="col-10 article-card" data-category="art">
+
+                    <div class="articleBox row align-items-center p-4 rounded-3 bg-white position-relative">
+                        <div class="col-lg-6 image-container">
+                            <img src="https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/545334528_1249259637215809_4851220658811442925_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LIA2PvtKW28Q7kNvwEJdXj_&_nc_oc=AdlMoUCSXuU6wkzUtAQ5OLkYxAi5EaB47Ru03rjXnkZg4nUrkBVvNpgmg9HpAgoGy0uobOcdrJ7HSnlD-rIyHCHr&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=tUs0YxfQcIlLbDH_zAF64w&oh=00_AfftRJA9wn-9MS0x1mxtCj8LGubX-lvM85PoR0spPyK9xQ&oe=690A084B" alt="img from https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/545334528_1249259637215809_4851220658811442925_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LIA2PvtKW28Q7kNvwEJdXj_&_nc_oc=AdlMoUCSXuU6wkzUtAQ5OLkYxAi5EaB47Ru03rjXnkZg4nUrkBVvNpgmg9HpAgoGy0uobOcdrJ7HSnlD-rIyHCHr&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=tUs0YxfQcIlLbDH_zAF64w&oh=00_AfftRJA9wn-9MS0x1mxtCj8LGubX-lvM85PoR0spPyK9xQ&oe=690A084B" class="img-fluid rounded-3">
+                        </div>
+
+                        <div class="col-lg-6 mt-3 mt-lg-0">
+                                <p class="badge bg-success-light text-secondary rounded-pill text-uppercase">
+                                    အနုပညာ 
+                                </p>
+                                <h3 class="fw-bold">
+                                    Civic Learning Space through English Songs
+                                </h3>
+                                <p class="line-clamp">
+                                    အားလုံးပဲ မင်္ဂလာပါ🔔🔔🔔
+                                    Level Up College မှ  လူငယ်များစိတ်ဝင်စားကြမည့် "Civic Learning Space through English Songs" အစီအစဉ်တစ်ခုနှင့် ထပ်မံမိတ်ဆက်ပေးချင်ပါတယ်။“Civic Learning Space through English Songs” အစီအစဉ်သည် ကရင်နီပြည်နယ်အတွင်းရှိ လူငယ်များအတွက် အင်္ဂလိပ်သီချင်းများလေ့လာခြင်းအားဖြင့် မိမိတို့၏စိတ်ခံစားချက်များဖော်ထုတ်ခြင်း၊ သီချင်းစာသားများမှတစ်ဆင့် ပြည်သူ့နီတိသဘောတရား (နိုင်ငံသားတိုင်းရသင့်ရထိုက်သောအခွင့်အရေးများနှင့် တာ၀န်၀တ္တရားများ၊ နှင့် လူငယ်များနှင့် ဆက်စပ်သောလူမှုပြသာနာများကို အပြန်အလှန်ဆွေးနွေးလေ့လာခြင်း)၊    အင်္ဂလိပ်စာစွမ်းရည်တိုးတက်ချင်သောလူငယ်များအတွက် အင်္ဂလိပ်သီချင်းဖြင့် အင်္ဂလိပ်ဝေါဟာရအသစ်များ ဆက်စပ်လေ့လာခြင်း၊ တေးဂီတများမှတဆင့် စိတ်ဒါဏ်ရာများ ဖြေလျော့စေခြင်း နှင့် အပြန်အလှန်နှစ်သိမ့်ခွန်အားပေးခြင်း စသည့်လုပ်ဆောင်ချက်များပါဝင်မည်ဖြစ်သည်။ 
+                                    သင်တန်းလျှောက်လိုပါက အောက်တွင်ဖော်ပြထားသော google form မှ တစ်ဆင့် လျှောက်ထားနိုင်ပါသည်။
+                                    Application Form Link - https://forms.gle/vhwUJccKEzWTGGrM7
+                                    Link ဖြင့် လျှောက်ထားရန်အဆင်မပြေသူများအတွက် ကယောလူငယ်ရုံးတွင် လျှောက်လွှာရယူနိုင်ပါသည်။ 
+                                    သင်တန်းနှင့်ဆက်စပ်အချက်အလက်များ
+                                    တက်ရောက်နိုင်သောသူများ - အသက် ၁၈ နှစ် မှ ၃၅ နှစ်အတွင်းလူငယ်များ။
+                                    လက်ခံမည့်သင်တန်းသားဦးရေ - ၃၀ ဦး(ကျား၊မ)။
+                                    သင်တန်းကြေး - အခမဲ့​(သင်တန်းအစအဆုံးပါဝင်တက်ရောက်နိုင်သူဖြစ်ရမည်)
+                                    သင်တန်းကြာချိန် - (၄) ပတ် ( အောက်တိုဘာလ ၆ - ၃၁ ရက်နေ့ထိ)။
+                                    သင်တန်းချိန် - တစ်ရက် ၄ နာရီ (တစ်ပတ်လျှင် ၅ ရက်)။
+                                    သင်တန်းတည်နေရာ -ဖရူဆိုမြို့နယ်၊ဟိုယာကျေးရွာ။ 
+                                    လျောက်လွှာပိတ်ရက် - စက်တင်ဘာလ ၂၅၊ ၂၀၂၅ 
+                                    အင်တာဗျူးဖြေဆိုရမည့်ရက် - ၂၀၂၅ အောက်တိုဘာ​လ​ ၁​ရက်နေ့​(လျှောက်ထားသူအားလုံးအင်တာဗျူးလာဖြေရမည်)
+                                    မှတ်ချက် - သင်တန်းတက်ရောက်ရန်လျှောက်ထားသူများသည် သတ်မှတ်ထားသော သင်တန်းချိန်အတိုင်း  (အစ မှ အဆုံး) ပြီးမြောက်အောင်တက်ရောက်ရမည်ဖြစ်သည်။ သင်တန်းလျှောက်လွှာတွင် မိမိကိုထောက်ခံသည့် လူပုဂ္ဂိုလ်တစ်ဦးဦးထည့်ပေးရမည်။
+                                </p>
+
+                                <!-- WARNING: MUST ADD LINK -->
+                                <a href="#" class="btn btn-outline-success expand-btn stretched-link">
+                                    ပို၍ ဖတ်ရှုရန်
+                                    <span>
+                                        <i class="bi bi-arrow-right"></i>
+                                    </span>
+                                </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- UNIVERSITY -->
+                <div class="col-10 article-card" data-category="university">
+
+                    <div class="articleBox row align-items-center p-4 rounded-3 bg-white position-relative">
+                            <div class="col-lg-6 image-container">
+                                <img src="https://scontent-sin2-3.xx.fbcdn.net/v/t39.30808-6/540154553_122146926416747783_2057120358965292824_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qRFCST8kjQAQ7kNvwGupZU8&_nc_oc=Adlw4v--lldRRLYnJuDoYz3fnxh7Rw_9liRKW2gw6gi5wOsWWP3zi3F6Pvb2YZRNIzykmbJBHcgjRMfu8oWRGfOI&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_gid=ovYORsl7nWTLyeZ-m7HJYg&oh=00_AfeHf093VkQnfsFpk8izKTIzIFH-U0qhlsUN5zYHKcgaYA&oe=690A0284" class="img-fluid rounded-3">
+                            </div>
+
+                            <div class="col-lg-6 mt-3">
+                                <p class="badge bg-success-light text-secondary rounded-pill text-uppercase">
+                                    တက္ကသိုလ် 
+                                </p>
+                                <h3 class="fw-bold">
+                                    မြန်မာပြည်ကနေ တက်ရောက်နိုင်တဲ့ အမေရိကန်တက္ကသိုလ်တစ်ခု
+                                </h3>
+                                <p class="line-clamp">
+                                    မြန်မာပြည်ကနေ တက်ရောက်နိုင်တဲ့ အမေရိကန်တက္ကသိုလ်တစ်ခု ရှိပါတယ်။
+
+ဒီနေ့တော့ မြန်မာနိုင်ငံမှာနေထိုင်ရင်းနဲ့၊ အလွန်သက်သာတဲ့ ကုန်ကျစရိတ်နဲ့ အမေရိကန်ဘွဲ့တစ်ခုကို ရယူနိုင်မယ့် University of the People (UoPeople) ဆိုတဲ့ တက္ကသိုလ်အကြောင်းကို အသေးစိတ် မျှဝေပေးချင်ပါတယ်။
+
+University of the People (UoPeople) အကြောင်း သိထားသင့်တဲ့ အချက်အလက်အမှန်များ 📚
+၁။ ဒါ တကယ့်တက္ကသိုလ်အစစ်လား? (Is it a Real University?)
+👉ဟုတ်ပါတယ်၊ အစစ်အမှန်ပါ။ UoPeople ဟာ အမေရိကန်ပြည်ထောင်စုမှာ တရားဝင် အသိအမှတ်ပြုခံထားရတဲ့ (Nationally Accredited) တက္ကသိုလ်တစ်ခုဖြစ်ပြီး၊ သူ့ရဲ့ဘွဲ့တွေဟာ အမေရိကန်ပညာရေးဝန်ကြီးဌာနက အသိအမှတ်ပြုထားတဲ့ အဖွဲ့အစည်းကနေ ချီးမြှင့်တာဖြစ်ပါတယ်။
+
+၂။ ကုန်ကျစရိတ် အသေးစိတ် (Detailed Costs)
+👉 UoPeople ဟာ ကျောင်းလခလုံးဝအခမဲ့ (Tuition-Free) ဖြစ်ပါတယ်။ သင်ကုန်ကျမှာက အောက်ပါအတိုင်းဖြစ်ပါတယ်-
+👉လျှောက်လွှာကြေး (Application Fee): တစ်ခါပဲပေးရမယ့် $60။
+👉 စာမေးပွဲကြေး (Assessment Fee): သင်ယူတဲ့ course တစ်ခုပြီးတိုင်း ပေးရတဲ့ကြေးဖြစ်ပါတယ်။
+👉 Bachelor's Degree (ဘွဲ့ကြို): တစ်ဘာသာလျှင် $120
+👉 Master's Degree (ဘွဲ့လွန်): တစ်ဘာသာလျှင် $300
+😍 စုစုပေါင်းကုန်ကျစရိတ်: ဒါကြောင့် Bachelor's Degree တစ်ခုလုံးအတွက် စုစုပေါင်း ကုန်ကျစရိတ်ဟာ ဒေါ်လာ ၄,၈၆၀ ($4,860) (သို့) $5000 ဝန်းကျင်သာ ရှိမှာဖြစ်ပါတယ်။ (ဒါတောင်မှ ဒီ Assessment Fee ကို မတတ်နိုင်သူတွေအတွက် ပညာသင်ဆု (scholarships) တွေ ထပ်မံလျှောက်ထားနိုင်ပါသေးတယ်)။
+
+၃။ ရရှိနိုင်သော ဘာသာရပ်များနှင့် ဘွဲ့များ (Available Majors and Degrees)
+သူတို့က လက်တွေ့အလုပ်အကိုင်အတွက် အသုံးဝင်တဲ့ ဘာသာရပ်တွေကို အဓိကထားသင်ကြားပေးပါတယ်။
+🔥 Business Administration (စီးပွားရေးစီမံခန့်ခွဲမှု): Associate's (AS), Bachelor's (BS), and Master's (MBA) degrees
+🔥 Computer Science (ကွန်ပျူတာသိပ္ပံ): Associate's (AS) and Bachelor's (BS) degrees
+🔥 Health Science (ကျန်းမာရေးသိပ္ပံ): Associate's (AS) and Bachelor's (BS) degrees
+🔥 Education (ပညာရေး): Master of Education (M.Ed.) degree
+
+သတိပြုရန်အချက်များ (Important Considerations)
+👉ဒါဟာ Visa ရနိုင်တဲ့လမ်းကြောင်းမဟုတ်ပါ: UoPeople မှာကျောင်းတက်ခြင်းက သင့်ကို အမေရိကန်မှာလာနေထိုင်ဖို့ ကျောင်းသားဗီဇာ (F-1 Visa) ကိုတော့ ရရှိစေမှာ မဟုတ်ပါဘူး။
+🥰 ကိုယ်တိုင်ကြိုးစားအားထုတ်မှု လိုအပ်ပါတယ်: အွန်လိုင်းသင်တန်းဖြစ်တဲ့အတွက်၊ ကိုယ့်ကိုယ်ကို အချိန်ပေးပြီး စာကြိုးစားနိုင်တဲ့ စိတ်ဓာတ်ရှိဖို့ အလွန်အရေးကြီးပါတယ်။
+
+University of the People ကို စိတ်ဝင်စားပြီး၊ ကျောင်းလျှောက်လွှာဖြည့်ရာတွင် အကူအညီလိုပါက၊ အခကြေးငွေပေးဆောင်ခြင်း (paying fees) နှင့်ပတ်သက်၍ မရှင်းလင်းတာများရှိပါက၊ သို့မဟုတ် အခြားမေးခွန်းများရှိပါက၊ ကျွန်တော်တို့ Page ကို တိုက်ရိုက် Message ပေးပို့ပြီး အချိန်မရွေး ဆက်သွယ်မေးမြန်းနိုင်ပါတယ်။ ကျွန်တော်တို့ community members တွေကို တတ်နိုင်သလောက် ကူညီလမ်းညွှန်ပေးသွားပါ့မယ်။
+                                </p>
+
+                                <!-- WARNING: MUST ADD LINK -->
+                                <a href="#" class="btn btn-outline-success expand-btn stretched-link">
+                                    ပို၍ ဖတ်ရှုရန်
+                                    <span>
+                                        <i class="bi bi-arrow-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                    </div>
+
+                </div>
+
+                <!-- RESEARCH -->
+                <div class="col-10 article-card" data-category="research">
+
+                    <div class="articleBox row align-items-center p-4 rounded-3 bg-white position-relative">
+                            <div class="col-lg-6 image-container">
+                                <img src="https://scontent-sin2-1.xx.fbcdn.net/v/t39.30808-6/532331150_122099292278976768_599621178929737514_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=oGs5oIPYmeIQ7kNvwGqLLI-&_nc_oc=Adld6GP0TKkSEf11y_h49KKT8o_4PRkFGI02f5x11oq7EXXgR1KGSLzNxUl9NVtXG5jW-v4vLhH4B6Yx8HlFzkot&_nc_zt=23&_nc_ht=scontent-sin2-1.xx&_nc_gid=tkyk6ALlbvRrLDkApYTAQw&oh=00_Afd9r3kWkzcgSYrrwQaso6ESR5wjtRR5E2CLYfM5HadjdQ&oe=690A0C75" class="img-fluid rounded-3">
+                            </div>
+
+                            <div class="col-lg-6 mt-3">
+                                <p class="badge bg-success-light text-secondary rounded-pill text-uppercase">
+                                    သုတေသန 
+                                </p>
+                                <h3 class="fw-bold">
+                                    ဂျန်ဒါရေးရာလေ့လာမှု (ကရင်နီ) စာတမ်းဖတ်ပွဲအတွက် သုတေသနစာတမ်းများ ဖိတ်ခေါ်ခြင်း 
+                                </h3>
+                                <p class="line-clamp">
+                                    ဂျန်ဒါရေးရာလေ့လာမှု (ကရင်နီ) စာတမ်းဖတ်ပွဲကို ကရင်နီပရာရူး၊ ကရင်နီလူမှုသိပ္ပံကောလိပ် နှင့် ကရင်နီအမျိုးသမီးများအစည်းအရုံးက ပူးပေါင်းစီစဥ်ပါသည်။ ကရင်နီရှိ ဂျန်ဒါရေးရာ ကိစ္စရပ်များတွင် ပညာရပ်ဆိုင်လေ့လာမှုများနှင့် အတွေ့အကြုံများမှ လေ့လာသင်ယူမှုများကို ဝေမျှသည့် ရပ်ဝန်းတစ်ခုကို ဖော်ဆောင်ပြီး၊ ကရင်နီလူမှုအဝန်းအဝိုင်းနှင့် အင်စတီကျူးရှင်းများအတွင်း ဂျန်ဒါရေးရာ ပြောဆိုမှုဆွေးနွေးများ၊ ကျင့်သုံး အကောင်အထည် ဖော်မှုများ အားကောင်းလာစေရန် ရည်ရွယ်ပါသည်။ 
+📅 နေ့စွဲ – ၆ ရက်၊ ဒီဇင်ဘာလ၊ ပထမအပတ်၊ ၂၀၂၅ ခုနှစ်။ 
+📍 တည်နေရာ – ကရင်နီ (နှင့်) အွန်လိုင်းပလက်ဖောင်း
+ကရင်နီဂျန်ဒါရေးရာကိစ္စများကို လေ့လာဆွေးနွေးရန် ရည်ရွယ်သော စာတမ်းဖတ်ပွဲအတွက် သုတေသနစာတမ်းများကို တင်သွင်းရန် ဖိတ်ခေါ်အပ်ပါသည်။
+📝 စာတမ်းတင်သွင်းရန် လမ်းညွှန်ချက်များ:
+• အကျဉ်းချုပ်စာတမ်း – A4 စာရွက်ဖြင့် တစ်မျက်နှာ 
+• မူရင်းစာတမ်း – A4 စာရွက်ဖြင့် ၃ မျက်နှာ မှ ၅ မျက်နှာ အထိ
+• အသုံးပြုနိုင်သောဘာသာများ – အင်္ဂလိပ်၊ မြန်မာ၊ ကရင်နီ
+• စာတမ်းတင်သွင်းရမည့်နောက်ဆုံးနေ့ – ၂၅ ရက်၊ အောက်တိုဘာလ၊ ၂၀၂၅ ခုနှစ် 
+• တင်သွင်းရန် – kngender@proton.me  
+📚 အကြောင်းအရာများအဖြစ် (ဥပမာ):
+• ကရင်နီယဉ်ကျေးမှု၊ လူမှုစီးပွား နယ်ပယ်ရှိ ဂျန်ဒါအခန်းကဏ္ဍများ
+• ငြိမ်းချမ်းရေးနှင့် နိုင်ငံရေးတွင် ပါဝင်မှု
+• ဂျန်ဒါအခြေပြုအကြမ်းဖက်မှုနှင့်ကာကွယ်ရေးစနစ်များ
+• LGBTQ+ အခွင့်အရေးနှင့် ပါဝင်ခွင့်
+• ထိခိုက်လွယ်အုပ်စုများနှင့် အမျိုးသမီးများအတွက် ပညာရေး၊ ကျန်းမားရေး နှင့် စီးပွားရေးခိုင်မာရေး
+ရွေးချယ်ခြင်းခံရသည့် စာတမ်းများအား ဆွေးနွေးပွဲတွင် တင်ပြခွင့်ရမည်ဖြစ်ပြီး၊ နောက်ပိုင်းတွင် ထုတ်ဝေခြင်းလည်းရှိပါမည်။ 
+ကွဲပြားခြားနားသောအတွေ့အကြုံရှိသူများ၊ အထူးသဖြင့် ကရင်နီလူငယ်များ၊ အမျိုးသမီးများနှင့် မိန်းကလေးများကို တက်ကြွစွာပါဝင်ရန် ဖိတ်ခေါ်အပ်ပါသည်။
+📩 ဆက်သွယ်ရန် – kngender@proton.me , +959764521784 ( signal )
+                                </p>
+
+                                <!-- WARNING: MUST ADD LINK -->
+                                <a href="#" class="btn btn-outline-success expand-btn stretched-link">
+                                    ပို၍ ဖတ်ရှုရန်
+                                    <span>
+                                        <i class="bi bi-arrow-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+
+            <div class="text-center py-5">
+                <img src="../assets/images/KwYO-logo.jpg" alt="KwYO-logo" class="logo">
+                <span class="fw-bold" style="font-size: 16px;">
+                    Kayaw Youth Organization
+                </span>
+            </div>
+
+            <div class="row">
+                <!-- QUICK LINKS -->
+                <div class="col-md-4 d-flex align-items-center flex-column mb-5">
+                    <h5 class="fw-bold text-center mb-3">
+                        အမြန်လင့်ခ်
+                    </h5>
+
+                    <ul class="list-unstyled lh-lg">
+                        <li>
+                            <a href="../index.html#about-us" class="text-white text-decoration-none">
+                                <i class="bi bi-people-fill"></i>&nbsp;&nbsp;ကျွန်ုပ်တို့ အကြောင်း
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./news.html" class="text-white text-decoration-none">
+                                <i class="bi bi-newspaper"></i>&nbsp;&nbsp;ပညာရေး သတင်းများ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../articles.html" class="text-white text-decoration-none">
+                                <i class="bi bi-pencil-fill"></i>&nbsp;&nbsp;ဆောင်းပါးများ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../gallery.html" class="text-white text-decoration-none">
+                                <i class="bi bi-images"></i>&nbsp;&nbsp;ပုံပြခန်း
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div class="col-md-4 d-flex align-items-center flex-column mb-5">
+                    <h5 class="fw-bold text-center mb-3">
+                        ဆက်သွယ်ရန်
+                    </h5>
+
+                    <ul class="list-unstyled lh-lg">
+                        <li>
+                            <a href="tel:+66988694109" class="text-white text-decoration-none">
+                                <i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;+66 9 886 94109
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:kwyo2010@gmail.com" class="text-white text-decoration-none">
+                                <i class="bi bi-envelope-fill"></i>&nbsp;&nbsp;kwyo2010@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;ဖရူဆိုမြို့နယ်၊ ကရင်နီပြည်၊ မြန်မာ
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- SOCIAL MEDIA -->
+                <div class="col-md-4 d-flex align-items-center flex-column mb-5">
+                    <h5 class="fw-bold text-center mb-3">
+                        ဆိုရှယ်မီဒီယာ
+                    </h5>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100069291317356" class="text-white text-decoration-none me-3">
+                            <i class="bi bi-facebook fs-1"></i>
+                        </a>
+                        <a href="https://www.facebook.com/messages/t/103176411774044" class="text-white text-decoration-none">
+                            <i class="bi bi-messenger fs-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="text-white">
+
+        <p class="text-center m-0 pb-3">
+            &copy; 
+            <span id="currentYear"></span> 
+            Kayaw Youth Organization. All rights reserved.
+        </p>
+    </footer>
+    
+    <script src="../script.js"></script>
+</body>
+</html>
