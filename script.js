@@ -77,6 +77,7 @@ items.forEach(el => observer.observe(el));
 
 
 // Articles tab filtering
+
 const tabButtons = document.querySelectorAll('#articleCategoryTab button');
 const allCards = document.querySelectorAll('.article-card');
 
@@ -88,11 +89,21 @@ tabButtons.forEach(btn => {
 
     const category = btn.getAttribute('data-bs-target');
 
-    allCards.forEach(articleBox => {
-      articleBox.style.display = (category === 'all' || articleBox.dataset.category === category) ? 'block' : 'none';
+    allCards.forEach(card => {
+      const categories = card.dataset.category;
+
+      // Handle both space-separated or JSON array formats
+      const categoryList = categories.startsWith('[')
+        ? JSON.parse(categories)
+        : categories.split(' ');
+
+      const match = category === 'all' || categoryList.includes(category);
+      card.style.display = match ? 'block' : 'none';
     });
   });
 });
+
+
 
 
 // Get current year for copyright text

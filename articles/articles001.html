@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP CSS & JS 5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP ICONS 1.11.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Padauk Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/jpeg" href="../assets/images/KwYO-logo.jpg">
+
+    <link rel="stylesheet" href="../style.css">
+
+    <title>Kayaw Youth Organization</title>
+</head>
+<body>
+    <!-- DESKTOP NAV -->
+    <div class="sticky-top d-none d-md-block" id="desktop-nav">
+        <ul class="nav bg-secondary justify-content-center">
+            <li class="nav-item">
+                <a href="../index.html" class="nav-link text-white" aria-current="page">
+                    ပင်မစာမျက်နှာ
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../education/news.html" class="nav-link text-white">
+                    ပညာရေး သတင်းများ
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../articles.html" class="nav-link text-white">
+                    ဆောင်းပါးများ
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../gallery.html" class="nav-link text-white">
+                    ပုံပြခန်း
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#footer" class="nav-link text-white">
+                    ဆက်သွယ်ရန်
+                </a>
+            </li>
+        </ul>
+
+        <nav class="navbar bg-body-tertiary border-bottom">
+            <div class="container">
+                <div>
+                    <a href="#top" class="navbar-brand">
+                        <img src="../assets/images/KwYO-logo.jpg" alt="KwYO-logo" class="logo">
+                        <span class="fw-bold">
+                            Kayaw Youth Organization
+                        </span>
+                    </a>
+                </div>
+                    
+                <div>
+                    <!-- WARNING: NEED TO ADD LINK -->
+                    <a href="#" class="btn btn-outline-secondary text-black text-white-on-hover">
+                        <i class="bi bi-translate"></i>&nbsp;&nbsp;Translate to English
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+        
+
+    <!-- MOBILE NAV -->
+    <div class="sticky-top mobile-nav d-block d-md-none" id="mobile-nav">
+        <nav class="navbar bg-body-tertiary border-bottom">
+            <div class="container">
+                <div>
+                    <a href="#top" class="navbar-brand">
+                        <img src="../assets/images/KwYO-logo.jpg" alt="KwYO-logo" class="logo">
+                        <span class="fw-bold">
+                            Kayaw Youth Organization
+                        </span>
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header border-bottom">
+                        <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
+                            လမ်းညွှန်ဘား
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">
+                                    <i class="bi bi-house"></i>&nbsp;&nbsp;ပင်မ စာမျက်နှာ
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../education/news.html">
+                                    <i class="bi bi-newspaper"></i>&nbsp;&nbsp;ပညာရေး သတင်းများ 
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../articles.html">
+                                    <i class="bi bi-pencil"></i>&nbsp;&nbsp;ဆောင်းပါးများ
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../gallery.html">
+                                    <i class="bi bi-images"></i>&nbsp;&nbsp;ပုံပြခန်း
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#footer">
+                                    <i class="bi bi-person-vcard"></i>&nbsp;&nbsp;ဆက်သွယ်ရန်
+                                </a>
+                            </li> 
+                        </ul>
+
+                        <a class="btn btn-secondary position-absolute bottom-0 start-0 end-0 mx-3 mb-3" href="#">
+                            <i class="bi bi-translate"></i>&nbsp;&nbsp;Translate to English
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <!-- INTRO SECTION -->
+        <section>
+            <p class="text-center m-4">
+                <!-- <a href="../index.html" class="text-decoration-none text-secondary">
+                    ပင်မစာမျက်နှာ
+                </a> -->
+                <!-- <i class="bi bi-caret-right-fill text-secondary"></i> -->
+                
+                <a href="../articles.html" class="text-decoration-none text-secondary">
+                    ဆောင်းပါးများ
+                </a>
+                <i class="bi bi-caret-right-fill text-secondary"></i>
+                <span class="text-secondary">
+                    သမိုင်း
+                </span>
+            </p>
+        </section>
+
+        <!-- ARTICLE SECTION -->
+        <section class="container article-section mb-5">
+            <h1 class="fw-bold text-center my-4">
+                ကယောနွယ်
+            </h1>
+
+            <p class="text-center text-secondary mb-4">
+                <i class="bi bi-calendar-event me-1"></i>
+                October 29, 2025
+            </p>
+
+            <img src="https://dvqlxo2m2q99q.cloudfront.net/000_clients/657152/file/657152vRCgVFSp.jpg" alt="img from https://www.atlasofhumanity.com/kayaw" class="img-fluid">
+            <p class="fst-italic text-center">Title of the image</p> 
+            <!-- add alit here -->
+
+            <p class="my-4">
+                ကယော (သို့မဟုတ်) Bwe သည် မြန်မာနှင့် ထိုင်းနိုင်ငံတွင် တည်ရှိနေသော ကယားပြည်နယ် အစုအဖွဲ့မှ လူမျိုးစုဖြစ်သည်။ မြန်မာနိုင်ငံတွင် လူသိနည်းသော လူမျိုးစုများထဲတွင် ပါဝင်ပါသည်။ 15,000 ဝန်းကျင်ရှိမည်ဟု ခန့်မှန်းရပြီး ၎င်းတို့သည် 2014 ခုနှစ်တွင် နိုင်ငံခြားခရီးသွားလုပ်ငန်းအတွက်သာ ဖွင့်လှစ်ထားသည့် ကယန်းပြည် နယ်တွင် နေထိုင်ကြသည်။ အမျိုးသမီးတိုင်းသည် ရိုးရာအဝတ်အစားများကို ဝတ်ဆင်ကြပြီး ခြေထောက်ကွင်းများ၊ စက်ဝိုင်းနားကပ်များ၊ လည်ဆွဲများ ဝတ်ဆင်ကြသည်။ အများစုသည် ၎င်းတို့၏ လူမျိုးစုဘာသာစကားကိုသာ ပြောဆိုကြပြီး ဗမာ၊ မြန်မာဘာသာစကားကို နားမလည်နိုင်ကြပေ။ ၎င်းတို့ကို မြန်မာနိုင်ငံမှ ဒုက္ခသည်များအဖြစ် ထိုင်းနိုင်ငံ မြောက်ပိုင်းတွင်လည်း တွေ့ရှိနိုင်သည်။ ထိုင်းမှာ ကောရိုးလို့ခေါ်တယ်။
+            </p>
+
+            <img src="https://dvqlxo2m2q99q.cloudfront.net/000_clients/657152/file/657152gBbvSDa4.jpg" alt="img from https://www.atlasofhumanity.com/kayaw" class="img-fluid">
+            <p class="fst-italic text-center">Title of the image</p>
+
+
+
+            <div class="border my-4 p-3">
+                <p class="text-secondary m-0">
+                    Credit: Atlas of Humanity. (n.d.). Kayaw Tribe, Myanmar and Thailand. Retrieved October 31, 2025, from https://www.atlasofhumanity.com/kayaw
+                </p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+
+            <div class="text-center py-5">
+                <img src="../assets/images/KwYO-logo.jpg" alt="KwYO-logo" class="logo">
+                <span class="fw-bold" style="font-size: 16px;">
+                    Kayaw Youth Organization
+                </span>
+            </div>
+
+            <div class="row">
+                <!-- QUICK LINKS -->
+                <div class="col-md-4 d-flex align-items-center flex-column mb-5">
+                    <h5 class="fw-bold text-center mb-3">
+                        အမြန်လင့်ခ်
+                    </h5>
+
+                    <ul class="list-unstyled lh-lg">
+                        <li>
+                            <a href="../index.html#about-us" class="text-white text-decoration-none">
+                                <i class="bi bi-people-fill"></i>&nbsp;&nbsp;ကျွန်ုပ်တို့ အကြောင်း
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../education/news.html" class="text-white text-decoration-none">
+                                <i class="bi bi-newspaper"></i>&nbsp;&nbsp;ပညာရေး သတင်းများ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../articles.html" class="text-white text-decoration-none">
+                                <i class="bi bi-pencil-fill"></i>&nbsp;&nbsp;ဆောင်းပါးများ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../gallery.html" class="text-white text-decoration-none">
+                                <i class="bi bi-images"></i>&nbsp;&nbsp;ပုံပြခန်း
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div class="col-md-4 d-flex align-items-center flex-column mb-5">
+                    <h5 class="fw-bold text-center mb-3">
+                        ဆက်သွယ်ရန်
+                    </h5>
+
+                    <ul class="list-unstyled lh-lg">
+                        <li>
+                            <a href="tel:+66988694109" class="text-white text-decoration-none">
+                                <i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;+66 9 886 94109
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:kwyo2010@gmail.com" class="text-white text-decoration-none">
+                                <i class="bi bi-envelope-fill"></i>&nbsp;&nbsp;kwyo2010@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;ဖရူဆိုမြို့နယ်၊ ကရင်နီပြည်၊ မြန်မာ
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- SOCIAL MEDIA -->
+                <div class="col-md-4 d-flex align-items-center flex-column mb-5">
+                    <h5 class="fw-bold text-center mb-3">
+                        ဆိုရှယ်မီဒီယာ
+                    </h5>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100069291317356" class="text-white text-decoration-none me-3">
+                            <i class="bi bi-facebook fs-1"></i>
+                        </a>
+                        <a href="https://www.facebook.com/messages/t/103176411774044" class="text-white text-decoration-none">
+                            <i class="bi bi-messenger fs-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="text-white">
+
+        <p class="text-center m-0 pb-3">
+            &copy; 
+            <span id="currentYear"></span> 
+            Kayaw Youth Organization. All rights reserved.
+        </p>
+    </footer>
+    
+    <script src="../script.js"></script>
+</body>
+</html>
