@@ -379,6 +379,7 @@ main .education-news-section {
 footer {
     background-color: #495057;
     color: #fff;
+    font-size: 16px;
 }
 
 footer .social-icons a:hover i {
@@ -468,6 +469,10 @@ main .article-section {
     max-width: 700px;
     display: block;
     margin: 0 auto;
+}
+
+main .article-section img {
+    width: 100%;
 }
 
 
