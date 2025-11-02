@@ -354,8 +354,8 @@ main .activity-section .activity-card:hover {
 }
 
 main .activity-section .activity-card .icon-wrapper {
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
@@ -363,6 +363,7 @@ main .activity-section .activity-card .icon-wrapper {
     background-color: rgba(25, 135, 84, 0.08);
     color: #198754;
     transition: all 0.3s ease;
+    padding: 0;
     margin-bottom: 10px;
 }
 
