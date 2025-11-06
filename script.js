@@ -1,8 +1,11 @@
 // Automatically set aria-current based on URL
 
-const links = document.querySelectorAll('nav a');
+const links = document.querySelectorAll('.nav-link');
+
+const currentUrl = window.location.href;
+
 links.forEach(link => {
-    if (link.href === window.location.href) {
+    if (link.href === currentUrl) {
       link.setAttribute('aria-current', 'page');
     }
 });
