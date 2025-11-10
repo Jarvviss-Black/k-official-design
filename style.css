@@ -115,6 +115,15 @@ main .bg-success-light {
     background-color: #d9ebe9;
 }
 
+main p .heading-line {
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    background-color: #198754;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
 main .underline {
     width: 0;
     height: 2px;
@@ -330,15 +339,6 @@ main .allied-org-section .scrolling-wrapper .scrolling-strip .scroll-item h6 {
 
 main .about-us-section {
     background-color: #f5f6f7;
-}
-
-main .about-us-section p .heading-line {
-    display: inline-block;
-    width: 40px;
-    height: 3px;
-    background-color: #198754;
-    margin-right: 10px;
-    vertical-align: middle;
 }
 
 main .about-us-section .about-us-photo {
