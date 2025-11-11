@@ -150,7 +150,7 @@ galleryPhotos.forEach((item) => {
   col.className = "col-12 col-lg-4 col-md-6";
   col.innerHTML = `
     <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
-      <img src="${item.src}" data-bs-image-url="${item.src}" alt="${item.title}" class="img-fluid" />
+      <img src="${item.src}" data-bs-image-url="${item.src}" alt="${item.title}" class="img-fluid" loading="lazy" />
       <div class="gallery-caption">
         <h5>${item.title}</h5>
       </div>
