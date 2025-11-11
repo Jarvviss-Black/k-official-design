@@ -124,7 +124,23 @@ const galleryPhotos = [
   {
     src: "assets/photos/hero-section-photo-001.jpg",
     title: "Kayaw Youth Dancing",
-    },
+  },
+  {
+    src: "assets/photos/gallery_photo_003.jpg",
+    title: "Title of the photo 3",
+  },
+  {
+    src: "assets/photos/gallery_photo_004.jpg",
+    title: "Title of the photo 4",
+  },
+  {
+    src: "assets/photos/gallery_photo_005.jpg",
+    title: "Title of the photo 5",
+  },
+  {
+    src: "assets/photos/gallery_photo_006.jpg",
+    title: "Title of the photo 6",
+  },
 ];
 
 const galleryGrid = document.getElementById("galleryGrid");

@@ -608,6 +608,31 @@ main .gallery-container .modal .modal-content .modal-body img {
 }
 
 
+/* VIDEOS.HTML */
+
+main .video-container {
+    padding-left: 20px;
+}
+
+main .video-container .myvideo {
+    cursor: pointer;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+main .video-container .myvideo:fullscreen {
+    object-fit: contain; 
+    height: 100%; 
+    width: 100%;
+}
+
+main .video-container .myvideo:-webkit-full-screen {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
 @media (max-width: 991.98px) {
     /* main > hero-section */
 
