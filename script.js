@@ -166,3 +166,20 @@ galleryModal.addEventListener("show.bs.modal", (event) => {
   const imageUrl = clickedItem.getAttribute("data-bs-image-url");
   document.getElementById("modalImage").src = imageUrl;
 });
+
+
+// VIDEOS
+
+const videos = document.querySelectorAll('.myvideo');
+
+function pauseOtherVideos({ target }) {
+  for (const video of videos) {
+    if (video !== target) {
+      video.pause();
+    }
+  }
+}
+
+for (const video of videos) {
+  video.addEventListener('play', pauseOtherVideos);
+}

@@ -304,21 +304,5 @@
     </footer>
     
     <script src="./script.js"></script>
-
-    <script>
-        const videos = document.querySelectorAll('.myvideo');
-
-        function pauseOtherVideos({ target }) {
-            for (const video of videos) {
-                if (video !== target) {
-                    video.pause();
-                }
-            }
-        }
-
-        for (const video of videos) {
-            video.addEventListener('play', pauseOtherVideos);
-        }
-    </script>
 </body>
 </html>
