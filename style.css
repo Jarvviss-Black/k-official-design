@@ -371,6 +371,11 @@ main .department-section .department-card {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     cursor: pointer;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    justify-content: center;
+    text-align: center;   
 }
 
 main .department-section .department-card:hover {
