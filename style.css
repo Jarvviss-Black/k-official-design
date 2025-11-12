@@ -276,16 +276,18 @@ main .hero-section .image-container .impact-box .metric-col {
 }
 
 main .hero-section .image-container .impact-box .metric-col .metric-value {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bold;
-    line-height: 1;
+    line-height: 0.5;
+    margin-top: 5px;
 }
 
 main .hero-section .image-container .impact-box .metric-col .metric-label {
-    font-size: 0.8rem;
-    margin-top: 5px;
+    font-size: 14px;
+    margin-top: 10px;
     color: #6c757d;
     white-space: nowrap;
+    line-height: 1.5;
 }
 
 main .hero-section .image-container .impact-box .metric-divider {
@@ -679,10 +681,6 @@ main .video-container .myvideo:-webkit-full-screen {
         font-size: 1.6rem;
     }
 
-    main .hero-section .image-container .impact-box .metric-col .metric-label {
-        font-size: 0.8rem;
-    }
-
     main .hero-section .image-container .impact-box .metric-divider {
         height: 60px;
     }  
@@ -713,13 +711,8 @@ main .video-container .myvideo:-webkit-full-screen {
     }
 
     main .hero-section .image-container .impact-box .metric-col .metric-label {
-        font-size: 0.75rem;
         white-space: normal;
     }
-
-    main .hero-section .image-container .impact-box .metric-divider {
-        display: none;
-    }  
 
     /* ARTICLES.HRML */
     main .nav-tabs .nav-item .nav-link {
