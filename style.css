@@ -13,19 +13,6 @@ body {
     font-size: 16px;
 }
 
-p {
-    font-size: 16px;
-}
-
-main ul, main ol {
-    font-size: 16px;
-    margin: 10px;
-}
-
-.btn {
-    font-size: 14px;
-}
-
 .navbar-brand span {
     font-size: 16px;
 }
@@ -73,7 +60,8 @@ main ul, main ol {
     display: inline-block;
     padding-bottom: 3px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: bold;
+    padding: 0 10px;
 }
 
 /* Create the animated green underline */
@@ -98,11 +86,22 @@ main ul, main ol {
     transition: none; 
 }
 
-#desktop-nav ul li a[aria-current="page"] {
-    text-decoration: underline !important;
-    text-underline-offset: 4px; 
-    text-decoration-color: white; 
+.desktop-nav ul li a[aria-current="page"] {
+    position: relative;             
+    text-decoration: none;           
+    display: inline-block;      
 }
+
+.desktop-nav ul li a[aria-current="page"]::after {
+    content: "";
+    position: absolute;
+    left: -1px;                     
+    right: -1px;                     
+    bottom: 8px;                     
+    height: 1.5px;                  
+    background-color: #fff;         
+}
+
 
 /* MAIN */
 
@@ -111,9 +110,20 @@ main {
 }
 
 
-/* ------------------------------
-   GENERAL UTILITY CLASSES
------------------------------- */
+/* GENERAL UTILITY CLASSES */
+
+main p {
+    font-size: 16px;
+}
+
+main ul, main ol {
+    font-size: 16px;
+    margin: 10px;
+}
+
+main .btn {
+    font-size: 14px;
+}
 
 main .bg-success-light {
     background-color: #d9ebe9;
@@ -124,7 +134,7 @@ main p .heading-line {
     width: 40px;
     height: 3px;
     background-color: #198754;
-    margin-right: 10px;
+    margin: 0 5px;
     vertical-align: middle;
 }
 
@@ -430,7 +440,7 @@ main .nav-tabs::-webkit-scrollbar {
 
 main .nav-tabs .nav-item .nav-link {
     color: black !important;
-    font-weight: 500;
+    font-weight: bold;
     border: none;
     font-size: 16px;
 }
