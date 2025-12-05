@@ -214,8 +214,16 @@ main .expand-btn:hover span {
 /* HERO SECTION */
 
 main .hero-section {
-    min-height: 95vh;
+    min-height: 50vh;
+    padding: 30px 0;
     background: linear-gradient(to bottom, #f8f9fa 0%, #f3f4f6 100%);
+}
+
+@media (max-height: 750px) {
+    main .hero-section {
+        min-height: 95vh;
+        padding: 0;
+    } 
 }
 
 main .text-content {
@@ -227,7 +235,7 @@ main .text-content {
 main .hero-section .image-container {
     position: relative;
     min-height: 400px; 
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 }
@@ -236,8 +244,8 @@ main .hero-section .image-container .main-image {
     min-width: 350px;
     height: auto;
     object-fit: cover;
-    border-radius: 15px;
-    padding: 10px;
+    border-radius: 10px; 
+    margin: 10px; 
 }
 
 main .hero-section .image-container .overlay-image-top {
@@ -255,9 +263,9 @@ main .hero-section .image-container .overlay-image-top {
 }
 
 main .hero-section .image-container .impact-box {
-    background-color: white;
+    background-color: #fff;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     position: absolute;
     bottom: -25px; 
@@ -269,6 +277,19 @@ main .hero-section .image-container .impact-box {
     gap: 20px;
     align-items: center;
     width: max-content;
+}
+
+/* Tablet view */
+@media (max-width: 1200px) {
+    main .hero-section .image-container {
+        min-height: 350px; 
+    }
+
+    main .hero-section .image-container .overlay-image-top {
+        top: -10px;     
+        right: 10px;      
+        height: 60px;    
+    }
 }
 
 main .hero-section .image-container .impact-box .metric-col {
